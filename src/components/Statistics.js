@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {fetchTotal} from '../actions/searchActions';
 
+import {Link} from 'react-router-dom';
 import {connect} from 'react-redux';
 
 class Statistics extends Component {
@@ -27,6 +28,9 @@ class Statistics extends Component {
                     <h3 className="text-primary card-title weight-bold">
                         Total Cases: {total['Total Cases']}
                     </h3>
+                    <div className="row">
+                        <h4><Link to="/">Go to Home Page</Link></h4>
+                    </div>
                 </div>
             </div>
         )

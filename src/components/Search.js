@@ -4,13 +4,12 @@ import {connect} from 'react-redux';
 
 class Search extends Component {
 
-    handleChange = e => {
-        this.props.searchState(e.target.value);
+    componentDidUpdate(){
+        this.props.fetchState(this.props.text);
     }
 
-    handleSubmit = e => {
-        e.preventDefault();
-        this.props.fetchState(this.props.text);
+    handleChange = e => {
+        this.props.searchState(e.target.value);
     }
 
     render() {
@@ -21,7 +20,7 @@ class Search extends Component {
                         <h1 className="display-4 mb-3">
                             <i className="fa fa-search" /> Search for a State
                         </h1>
-                        <form id="searchForm" onSubmit={this.handleSubmit}>
+                        <form id="searchForm">
                             <select className="form-control" name="searchText" onChange={this.handleChange} placeholder="State name...">
                                 <option value="Andhra%20Pradesh">Andhra Pradesh</option>
                                 <option value="Andaman%20and%20Nicobar%20Islands">Andaman and Nicobar Islands</option>
@@ -58,7 +57,6 @@ class Search extends Component {
                                 <option value="Uttarakhand">Uttarakhand</option>
                                 <option value="West%20Bengal">West Bengal</option>
                             </select>
-                            <button type="submit" className="btn btn-primary btn-lg mt-3">Search</button>
                         </form>
                     </div>
                 </div>
