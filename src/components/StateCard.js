@@ -7,7 +7,7 @@ class StateCard extends Component {
             <div>
                 <div className="card card-body bg-dark text-center h-100">
                     <h1 className="text-light card-title weight-bold">
-                        Cases in {stateValue.name}
+                        {stateValue.name}
                     </h1>
                     <h5 className="text-warning card-title">
                         Confirmed: {stateValue.confirmed}

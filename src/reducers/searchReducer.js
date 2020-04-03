@@ -1,7 +1,8 @@
 const initialState = {
     text: '',
     total: [],
-    stateName: []
+    stateName: [],
+    all: []
 }
 
 export default function(state = initialState, action){
@@ -20,6 +21,11 @@ export default function(state = initialState, action){
             return{
                 ...state,
                 total: action.payload
+            }
+        case 'FETCH_ALL':
+            return {
+                ...state,
+                all: action.payload
             }
         default:
             return state;

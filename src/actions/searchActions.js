@@ -1,4 +1,4 @@
-import {SEARCH_STATE, FETCH_STATE, FETCH_TOTAL} from './types';
+import {SEARCH_STATE, FETCH_STATE, FETCH_TOTAL, FETCH_ALL} from './types';
 
 import axios from 'axios';
 
@@ -23,6 +23,15 @@ export const fetchTotal = () => dispatch => {
         .then(res => dispatch({
             type: FETCH_TOTAL,
             payload: res.data
+        }))
+        .catch(err => console.log("Error is:" + err));
+}
+
+export const fetchAll = () => dispatch => {
+    axios.get("https://covid19-india-adhikansh.herokuapp.com/states")
+        .then(res => dispatch({
+            type: FETCH_ALL,
+            payload: res.data.state
         }))
         .catch(err => console.log("Error is:" + err));
 }

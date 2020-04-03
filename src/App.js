@@ -8,6 +8,7 @@ import About from './components/About';
 
 import { Provider } from 'react-redux';
 import store from './store';
+import Search from './components/Search';
 
 
 class App extends Component {
@@ -19,6 +20,7 @@ class App extends Component {
             <Navbar />
             <Switch>
               <Route path="/" exact component={Landing} /> 
+              <Route path="/search" component={Search} />
               <Route path="/statistics" component={Statistics} />  
               <Route path="/about" component={About} />  
             </Switch>
