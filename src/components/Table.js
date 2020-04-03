@@ -17,7 +17,7 @@ class Table extends Component {
                 <table className="table table-striped">
                     <thead className="thead-dark">
                         <tr>
-                          <th scope="col" className="text-center">State Name</th>
+                          <th scope="col" className="text-center">State/UT</th>
                           <th scope="col">Ac.</th>
                           <th scope="col">Cu.</th>
                           <th scope="col">De.</th>
