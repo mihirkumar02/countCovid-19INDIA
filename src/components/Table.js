@@ -19,7 +19,7 @@ class Table extends Component {
                         <tr>
                           <th scope="col" className="text-center">State/UT</th>
                           <th scope="col">Ac.</th>
-                          <th scope="col">Cu.</th>
+                          <th scope="col">Dis.</th>
                           <th scope="col">De.</th>
                           <th scope="col">Tot.</th>
                         </tr>

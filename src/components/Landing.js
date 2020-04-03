@@ -28,7 +28,7 @@ class Landing extends Component {
                         </div>
                         <div className="col-md-4">
                             <h5 className="text-success card-title weight-bold">
-                                Cured/Discharged/Migrated( Cu. ): <b>{total['Cured/Discharged/Migrated']}</b>
+                                Discharged/Migrated( Dis. ): <b>{total['Cured/Discharged/Migrated']}</b>
                             </h5>
                         </div>
                         <div className="col-md-3 text-center">
