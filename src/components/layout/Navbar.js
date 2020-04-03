@@ -1,27 +1,27 @@
 import React, { Component } from 'react';
-import {Link} from 'react-router-dom';
+import {NavLink, Link} from 'react-router-dom';
 
 class Navbar extends Component {
     render() {
         return (
             <div>
-                <nav className="navbar navbar-light bg-dark mb-5">
+                <nav className="navbar navbar-dark bg-light mb-5">
                   <div className="container">
-                        <div className="navbar-header">
-                            <Link to="/" className="navbar-brand text-white text-lg brand-text">
-                                Count Covid-19 INDIA
-                                <i className="fas fa-viruses fa-5x" id="viruses-logo"/>
+                        <div className="heading-center">
+                            <Link to="/" className="navbar-brand text-dark text-lg bg-light brand-text">
+                                <b>Count Covid-19</b>
+                                <i className="fas fa-viruses" id="logo"/>
                             </Link>
                         </div>
-                        <ul className="navbar-nav ml-auto text-light d-inline-block">
+                        <ul className="navbar-nav text-light d-inline-block">
                             <li className="nav-item d-inline-block mr-4">
-                                <Link to="/search" className="text-white text-lg brand-text text-right mr-5">Search</Link>
+                                <NavLink to="/search" className="text-dark text-lg brand-text" id="logo"><i className="fas fa-search"/> Search</NavLink>
                             </li>
                             <li className="nav-item d-inline-block mr-4">
-                                <Link to="/statistics" className="text-white text-lg brand-text text-right">Map</Link>
+                                <NavLink to="/statistics" className="text-dark text-lg brand-text" id="logo"><i className="fas fa-map-marker-alt"/> Map</NavLink>
                             </li>
                             <li className="nav-item d-inline-block mr-4">
-                                <Link to="/about" className="text-white text-lg brand-text ml-5">About</Link>
+                                <NavLink to="/about" className="text-dark text-lg brand-text" id="logo"><i className="fas fa-info-circle"/> About</NavLink>
                             </li>
                         </ul>
                     </div>

@@ -8,6 +8,10 @@ class Statistics extends Component {
     render() {
         return (
             <div className="container Statistics">
+                <div className="heading-center">
+                    <h4 className="heading">Click on any marker to view the State-wise count</h4>
+                </div>
+                <hr />
                 <div className="row Height">
                     <div className="col-md-6 col-sm-12 mapHeight">
                         <MapContainer />
@@ -16,8 +20,8 @@ class Statistics extends Component {
                         <StateContainer />
                     </div>
                 </div>
-                <div className="row">
-                    <h4><Link to="/">Go to Home Page</Link></h4>
+                <div className="heading-center">
+                    <h4><Link className="btn btn-success" to="/">Go to Home Page</Link></h4>
                 </div>
             </div>
         )

@@ -10,16 +10,23 @@ html{
   scroll-behavior: smooth;
 }
 
+nav{
+  box-shadow: 0 5px 15px -10px black;
+}
+
 .Landing{
   min-height: 70vh;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .Statistics{
   min-height: 75vh;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .About{
   min-height: 75vh;
+  font-family: 'Montserrat', sans-serif;
 }
 
 #viruses-logo{
@@ -41,6 +48,18 @@ html{
 
 .stateDiv{
   margin-top: 20vh;
+}
+
+.heading-center{
+  text-align: center;
+}
+
+.heading{
+  font-weight: bold;
+}
+
+#logo{
+  font-size: 20px;
 }
 
 @media only screen and (max-width: 768px){

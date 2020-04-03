@@ -84,8 +84,8 @@ class About extends Component {
                             </div>
                         </div>
                     </div>
-                    <div className="row">
-                        <h4><Link to="/">Go to Home Page</Link></h4>
+                    <div className="heading-center">
+                        <h4><Link className="btn btn-success" to="/">Go to Home Page</Link></h4>
                     </div>
                 </div>
             </div>

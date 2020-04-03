@@ -14,9 +14,28 @@ class Table extends Component {
 
         return (
             <div>
-                <ul>
-                    {all.map((one, index) => <li key={index} one={one}> {one.name} </li>)}
-                </ul>
+                <table className="table table-striped">
+                    <thead className="thead-dark">
+                        <tr>
+                          <th scope="col" className="text-center">State Name</th>
+                          <th scope="col">Ac.</th>
+                          <th scope="col">Cu.</th>
+                          <th scope="col">De.</th>
+                          <th scope="col">Tot.</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {all.map((one, index) => 
+                            <tr key={index}>
+                                <td className="text-center">{one.name}</td>
+                                <td className="text-warning"><b>{one.confirmed}</b></td>
+                                <td className="text-success"><b>{one.cured}</b></td>
+                                <td className="text-danger"><b>{one.death}</b></td>
+                                <td className="text-primary"><b>{one.total}</b></td>
+                            </tr>
+                        )}
+                    </tbody>
+                </table>
             </div>
         )
     }

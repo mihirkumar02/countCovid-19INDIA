@@ -16,28 +16,29 @@ class Landing extends Component {
         return (
             <div className="Landing">
                 <div className="container">
+                    <div className="heading-center">
+                        <h3 className="heading">Count in INDIA</h3>
+                    </div>
+                    <hr />
                     <div className="row centered-row">
-                        <div className="col-md-3">
-                            <h3 className="text-dark card-title weight-bold">
-                                Active Cases: <b>{total['Total Confirmed cases']}</b>
-                            </h3>
+                        <div className="col-md-3 text-center">
+                            <h4 className="text-warning card-title weight-bold">
+                                Active( Ac. ): <b>{total['Total Confirmed cases']}</b>
+                            </h4>
                         </div>
                         <div className="col-md-4">
                             <h5 className="text-success card-title weight-bold">
-                                Cured/Discharged
-                            </h5>
-                            <h5 className="text-success card-title weight-bold">
-                                /Migrated: <b>{total['Cured/Discharged/Migrated']}</b>
+                                Cured/Discharged/Migrated( Cu. ): <b>{total['Cured/Discharged/Migrated']}</b>
                             </h5>
                         </div>
-                        <div className="col-md-2">
+                        <div className="col-md-3 text-center">
                             <h5 className="text-danger card-title weight-bold">
-                                Deaths: <b>{total.Death}</b>
+                                Deaths( De. ): <b>{total.Death}</b>
                             </h5>
                         </div>
-                        <div className="col-md-3">
+                        <div className="col-md-2 text-center">
                             <h5 className="text-primary card-title weight-bold">
-                                Total Cases: <b>{total['Total Cases']}</b>
+                                Total(Tot.): <b>{total['Total Cases']}</b>
                             </h5> 
                         </div>
                     </div>
