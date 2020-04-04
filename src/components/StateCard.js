@@ -5,10 +5,11 @@ class StateCard extends Component {
         const {stateValue} = this.props;
         return (
             <div>
-                <div className="card card-body bg-dark text-center h-100">
+                <div className="card card-body bg-dark smallhead text-center h-100">
                     <h1 className="text-light card-title weight-bold">
                         {stateValue.name}
                     </h1>
+                    <hr className="styledhr"/>
                     <h5 className="text-warning card-title">
                         Confirmed: {stateValue.confirmed}
                     </h5>

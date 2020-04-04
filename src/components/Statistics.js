@@ -12,13 +12,11 @@ class Statistics extends Component {
                     <h4 className="heading">Click on any marker to view the State-wise count</h4>
                 </div>
                 <hr />
-                <div className="row Height">
-                    <div className="col-md-6 col-sm-12 mapHeight">
-                        <MapContainer />
-                    </div>
-                    <div className="col-md-5 col-sm-12 offset-md-1 stateDiv">
-                        <StateContainer />
-                    </div>
+                <div className="row">
+                    <MapContainer />
+                </div>
+                <div className="text-center Height stateDiv">
+                    <StateContainer />
                 </div>
                 <div className="heading-center">
                     <h4><Link className="btn btn-success" to="/">Go to Home Page</Link></h4>
