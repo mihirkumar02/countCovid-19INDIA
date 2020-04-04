@@ -15,18 +15,27 @@ nav{
 }
 
 .Landing{
+  margin-top: 15vh;
   min-height: 70vh;
   font-family: 'Montserrat', sans-serif;
 }
 
 .Statistics{
+  margin-top: 15vh;
   min-height: 75vh;
   font-family: 'Montserrat', sans-serif;
 }
 
 .About{
+  margin-top: 15vh;
   min-height: 75vh;
   font-family: 'Montserrat', sans-serif;
+}
+
+.Height{
+  margin-top: 15vh;
+  min-height: 30vh;
+  margin-bottom: 10vh;
 }
 
 #viruses-logo{
@@ -41,10 +50,6 @@ nav{
   min-height: 20vh;
 }
 
-.Height{
-  min-height: 30vh;
-  margin-bottom: 10vh;
-}
 
 .stateDiv{
   margin-top: 15vh;
@@ -96,6 +101,10 @@ hr.styledhr{
 
   .smallhead h1{
     font-size: 28px;
+  }
+
+  .About, .Landing, .Statistics, .Height{
+    margin-top: 20vh;
   }
 }
 
