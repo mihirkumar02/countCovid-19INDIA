@@ -1,6 +1,6 @@
-# Count Covid-19 INDIA
+# Count Covid-19 for INDIA
 
-https://countcovid.netlify.com
+https://countercovid.netlify.com
 
 This website displays the state-wise numbers for Covid-19 cases in India, along with the details on Covid-19.
 
