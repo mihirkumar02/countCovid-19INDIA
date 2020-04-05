@@ -7,7 +7,7 @@ class StateCard extends Component {
             <div>
                 <div className="card card-body bg-dark smallhead text-center h-100">
                     <h1 className="text-light card-title weight-bold">
-                        {stateValue.name}
+                        {stateValue.name === 'Telengana' ? 'Telangana' : stateValue.name }
                     </h1>
                     <hr className="styledhr"/>
                     <h5 className="text-warning card-title">

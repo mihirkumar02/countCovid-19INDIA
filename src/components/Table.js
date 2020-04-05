@@ -27,7 +27,7 @@ class Table extends Component {
                     <tbody>
                         {all.map((one, index) => 
                             <tr key={index}>
-                                <td className="text-center">{one.name}</td>
+                                <td className="text-center">{one.name === 'Telengana' ? 'Telangana' : one.name}</td>
                                 <td className="text-warning"><b>{one.confirmed}</b></td>
                                 <td className="text-success"><b>{one.cured}</b></td>
                                 <td className="text-danger"><b>{one.death}</b></td>

@@ -52,7 +52,7 @@ class Search extends Component {
                                     <option value="Rajasthan">Rajasthan</option>
                                     <option value="Sikkim">Sikkim</option>
                                     <option value="Tamil%20Nadu">Tamil Nadu</option>
-                                    <option value="Telangana">Telangana</option>
+                                    <option value="Telengana">Telangana</option>
                                     <option value="Tripura">Tripura</option>
                                     <option value="Uttar%20Pradesh">Uttar Pradesh</option>
                                     <option value="Uttarakhand">Uttarakhand</option>
