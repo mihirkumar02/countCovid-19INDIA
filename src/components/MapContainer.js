@@ -69,7 +69,7 @@ class MapContainer extends Component {
                     <Feature coordinates={[74.2179, 27.0238]} onClick={() => {this.display('Rajasthan'); window.scrollTo(0,500);}}/>
                     <Feature coordinates={[88.5122, 27.5330]} onClick={() => {this.display('Sikkim'); window.scrollTo(0,500);}}/>
                     <Feature coordinates={[78.6569, 11.1271]} onClick={() => {this.display('Tamil%20Nadu'); window.scrollTo(0,500);}}/>
-                    <Feature coordinates={[79.0193, 18.1124]} onClick={() => {this.display('Telangana'); window.scrollTo(0,500);}}/>
+                    <Feature coordinates={[79.0193, 18.1124]} onClick={() => {this.display('Telengana'); window.scrollTo(0,500);}}/>
                     <Feature coordinates={[91.9882, 23.9408]} onClick={() => {this.display('Tripura'); window.scrollTo(0,500);}}/>
                     <Feature coordinates={[80.9462, 26.8467]} onClick={() => {this.display('Uttar%20Pradesh'); window.scrollTo(0,500);}}/>
                     <Feature coordinates={[79.0193, 30.0668]} onClick={() => {this.display('Uttarakhand'); window.scrollTo(0,500);}}/>
